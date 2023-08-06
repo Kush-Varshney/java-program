@@ -1,0 +1,276 @@
+1-PRINT JAI GLA
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("jai gla");
+    }
+}
+
+2-SUM OF TWO NUMBER
+
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("jai gla");
+    }
+}
+
+3-CHECK WHETHER NUMBER IS ODD OR EVEN
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a = input.nextInt();
+        if (a%2==0){
+           System.out.println("even number") ;
+        }
+        else{
+            System.out.println("odd number");
+        }
+       input.close();
+    }
+}
+
+4-GREATEST NUMBER USING TERNARY OPERATOR
+
+class maximum_number {
+    public static void main(String[] args) {
+        int a=20,b=10,c=10,max;
+        max=(a>b)?(a>c? a : c):(b>c ? b:c);
+        System.out.println(max);
+    }
+}
+
+5-LOWEST NUMBER USING TERNARY OPERATOR
+
+class minimum_number {
+    public static void main(String[] args) {
+        int a=9,b=10,c=10,min;
+        min=(a<b)?(a<c? a : c):(b<c ? b:c);
+        System.out.println(min);
+    }
+} 
+
+6-CHECK A NUMBER IS DIVISIBLE BY 5 OR 3
+
+import java.util.Scanner;
+class number {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a=input.nextInt();
+        if (a%3==0 & a%5==0){
+            System.out.println("number is divided by 3 and 5");
+        }
+        else{
+            System.out.println("number is not divided by 3 and 5");
+        }
+        input.close();
+    }
+}
+
+7-PRINT AREA OF CIRCLE
+
+import java.util.Scanner;
+class area_of_circle {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int a=input.nextInt();
+        float pi = 3.14f;
+        System.out.println("area of circle = "+pi*a*a);
+       input.close();
+    }
+}
+
+8-PRINT AREA OF RECTANGLE
+
+import java.util.Scanner;
+class area_of_rectangle {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int l=input.nextInt();
+        int b=input.nextInt();
+        System.out.println("area of rectangle = "+l*b);
+        input.close();
+    }
+}
+
+9-CALCULATE SIMPLE INTEREST
+
+import java.util.Scanner;
+class simple_interest {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the principal amount");
+        float p=input.nextFloat();
+        System.out.println("enter the rate");
+        float r=input.nextFloat();
+        System.out.println("enter the time");
+        float t=input.nextFloat();
+        System.out.println("simple interest = "+(p*r*t)/100);
+        input.close();
+    }
+}
+
+10-CALCULATE COMPOUND INTEREST
+
+import java.util.Scanner;
+class compound interest {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the principal amount");
+        double p=input.nextDouble();
+        System.out.println("enter the rate");
+        double r=input.nextDouble();
+        System.out.println("enter the time");
+        double t=input.nextDouble();
+        System.out.println("enter the number of times interest applied per time period");
+        double n=input.nextDouble();
+        System.out.println("compound interest = "+p* Math.pow (1+(r/n),n*t));
+        input.close();
+    }
+}
+
+11-1 TO n NATURAL NUMBER BY USING WHILE LOOP
+
+import java.util.Scanner;
+class 1_to_n_natural_number {
+    public static void main(String[] args) {
+      int i=1;
+      System.out.println("enter the number");
+      Scanner input =new Scanner(System.in);
+      int n=input.nextInt();
+      while (i<=n){
+          System.out.println(i);
+          i++;
+      }
+      input.close();
+    }
+}
+
+12- n TO 1 NATURAL NUMBER BY USING DO WHILE LOOP
+
+import java.util.Scanner;
+class n_to_1_natural_number {
+    public static void main(String[] args) {
+      int i=1;
+      System.out.println("enter the number");
+      Scanner input =new Scanner(System.in);
+      int n=input.nextInt();
+      do{
+          System.out.println(n);
+          n--;
+      }
+      while (i<=n);
+      input.close();
+    }
+}
+
+13-TABLE OF ANY NUMBER
+
+import java.util.Scanner;
+class table {
+    public static void main(String[] args) {
+      System.out.println("enter the number");
+      Scanner input =new Scanner(System.in);
+      int n=input.nextInt();
+      for (int i=1;i<11;i++) {
+          System.out.println(n+"*"+i+"="+n*i);
+      }
+      input.close();
+    }
+}
+
+14- REVERSE A NUMBER
+
+import java.util.Scanner;
+class reverse_a_number {
+    public static void main(String[] args) {
+      System.out.println("enter the number");
+      Scanner input =new Scanner(System.in);
+      int n=input.nextInt();
+      int r,s=0;
+      while(n!=0){
+          r=n%10;
+          s=s*10+r;
+          n=n/10;
+      }
+      System.out.println(s);
+      input.close();
+    }
+}
+
+15-FACTORIAL OF A NUMBER
+
+import java.util.Scanner;
+class table {
+    public static void main(String[] args) {
+      System.out.println("enter the number");
+      Scanner input =new Scanner(System.in);
+      int n=input.nextInt();
+      int fact=1;
+      while(n!=0){
+          fact=fact*n;
+          n=n-1;
+      }
+      System.out.println(fact);
+      input.close();
+    }
+}
+
+16-CHECK A NUMBER IS PALLENDROM OR NOT
+
+import java.util.Scanner;
+class table {
+    public static void main(String[] args) {
+      System.out.println("enter the number");
+      Scanner input =new Scanner(System.in);
+      int n=input.nextInt();
+      int b=n;
+      int s=0,r;
+      while(n!=0){
+          r=n%10;
+          s=s*10+r;
+          n=n/10;
+      }
+      if (s==b){
+          System.out.println("it is pallendrom number");
+      }
+      else {
+          System.out.println("it is not a pallendrom number");
+      }
+      input.close();
+    }
+}
+
+17-PRINT FIRST AND LAST DIGIT OF A NUMBER
+
+import java.util.Scanner;
+class main{
+    public static void main(String[] args){
+        Scanner input = new Scanner (System.in);
+        int n = input.nextInt();
+        int first=n;
+        int last=n%10;
+        while(first>=10){
+            first/=10;
+        }
+        System.out.println("first digit = "+first);
+        System.out.println("last digit = "+last);
+        input.close();
+    }
+}
+
+18- 1 TO n NATURAL NUMBER BY FOR LOOP
+
+import java.util.Scanner;
+class 1_to_n_natural_number {
+    public static void main(String[] args) {
+      System.out.println("enter the number");
+      Scanner input =new Scanner(System.in);
+      int n=input.nextInt();
+      for (int i=1;i<=n;i++){
+          System.out.println(i);
+      }
+      input.close();
+    }
+}
