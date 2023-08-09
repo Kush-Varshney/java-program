@@ -1,3 +1,10 @@
+KUSH VARSHNEY
+ROLL NO:-2215000971
+GLA UNIVERSITY MATHURA
+
+
+
+
 1-PRINT JAI GLA
 
 class HelloWorld {
@@ -274,3 +281,12 @@ class 1_to_n_natural_number {
       input.close();
     }
 }
+
+
+
+
+
+
+KUSH VARSHNEY
+ROLL NO:-2215000971
+GLA UNIVERSITY MATHURA
