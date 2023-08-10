@@ -17,7 +17,8 @@ class HelloWorld {
 
 class HelloWorld {
     public static void main(String[] args) {
-        System.out.println("jai gla");
+        int a=5,b=10;
+        System.out.println(a+b);
     }
 }
 
